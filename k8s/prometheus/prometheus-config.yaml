@@ -25,4 +25,4 @@ data:
 
       - job_name: 'postgres'
         static_configs:
-          - targets: ['host.docker.internal:9187']  # if you add postgres exporter later
+          - targets: ['host.docker.internal:9187']
