@@ -17,11 +17,15 @@ data:
       editable: true
 
   grafana.ini: |
+    [auth]
+    allow_embedding = true
+
     [server]
+    enable_cors = true
     root_url = %(protocol)s://%(domain)s:%(http_port)s/monitoring/grafana/
     serve_from_sub_path = true
-    [auth]
-    disable_login_form = true
-    disable_signout_menu = true
-    [auth.anonymous]
-    enabled = true
+    # [auth]
+    # disable_login_form = true
+    # disable_signout_menu = true
+    # [auth.anonymous]
+    # enabled = true
