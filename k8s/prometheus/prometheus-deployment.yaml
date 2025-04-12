@@ -13,6 +13,7 @@ spec:
       labels:
         app: prometheus
     spec:
+      hostNetwork: true
       containers:
         - name: prometheus
           image: prom/prometheus:latest
