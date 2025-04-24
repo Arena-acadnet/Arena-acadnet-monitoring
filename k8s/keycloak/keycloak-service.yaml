@@ -5,8 +5,8 @@ metadata:
   namespace: monitoring
 spec:
   ports:
-    - port: 80
-      targetPort: 8080
+    - port: 8082
+      targetPort: 8082
   selector:
     app: keycloak
   type: ClusterIP

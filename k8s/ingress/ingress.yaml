@@ -5,29 +5,31 @@ metadata:
   namespace: monitoring
   annotations:
     konghq.com/strip-path: 'true'
+    konghq.com/protocol: 'http'
 spec:
   ingressClassName: kong
   rules:
-  - http:
-      paths:
-      - path: /monitoring/prometheus
-        pathType: Prefix
-        backend:
-          service:
-            name: prometheus
-            port:
-              number: 9090
-      - path: /monitoring/grafana
-        pathType: Prefix
-        backend:
-          service:
-            name: grafana
-            port:
-              number: 3000
-      - path: /monitoring/keycloak
-        pathType: Prefix
-        backend:
-          service:
-            name: keycloak
-            port:
-               number: 80
+    - host: arena.acadnet.eu
+      http:
+        paths:
+        - path: /monitoring/prometheus
+          pathType: Prefix
+          backend:
+            service:
+              name: prometheus
+              port:
+                number: 9090
+        - path: /monitoring/grafana
+          pathType: Prefix
+          backend:
+            service:
+              name: grafana
+              port:
+                number: 3000
+        - path: /monitoring/keycloak
+          pathType: Prefix
+          backend:
+            service:
+              name: keycloak
+              port:
+                number: 8082
