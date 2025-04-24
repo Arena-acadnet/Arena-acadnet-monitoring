@@ -24,3 +24,10 @@ spec:
             name: grafana
             port:
               number: 3000
+      - path: /monitoring/keycloak
+        pathType: Prefix
+        backend:
+          service:
+            name: keycloak
+            port:
+               number: 80
