@@ -4,7 +4,7 @@ metadata:
   name: keycloak-ingress
   namespace: monitoring
   annotations:
-    konghq.com/strip-path: "false"   # ⚠️ REQUIRED for Keycloak
+    konghq.com/strip-path: "false"
     konghq.com/protocol: "http"
 spec:
   ingressClassName: kong
@@ -12,7 +12,7 @@ spec:
   - host: arena.acadnet.eu
     http:
       paths:
-      - path: /keycloak
+      - path: /monitoring/keycloak
         pathType: Prefix
         backend:
           service:
