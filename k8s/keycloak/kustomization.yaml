@@ -1,4 +1,7 @@
+namespace: monitoring
+
 resources:
+  - namespace.yaml
   - keycloak-deployment.yaml
   - keycloak-service.yaml
 
