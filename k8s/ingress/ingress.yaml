@@ -6,6 +6,8 @@ metadata:
   annotations:
     konghq.com/strip-path: 'true'
     konghq.com/protocol: 'http'
+    konghq.com/oauth2-proxy: "oauth2-proxy.monitoring.svc.cluster.local"
+    konghq.com/plugins: keycloak-auth
 spec:
   ingressClassName: kong
   rules:

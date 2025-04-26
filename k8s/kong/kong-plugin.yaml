@@ -1,0 +1,13 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: keycloak-auth
+  namespace: monitoring
+config:
+  client_id: oauth2-proxy
+  client_secret: P3E9xeQA50TdTPpt2VopXdx2lIuYzfvx
+  authorize_url: https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/auth
+  token_url: https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/token
+  redirect_uri: https://arena.acadnet.eu/oauth2/callback
+plugin: oauth2
+
