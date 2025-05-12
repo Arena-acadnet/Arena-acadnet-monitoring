@@ -7,5 +7,5 @@ then
     exit 1
 fi
 
-wget https://raw.githubusercontent.com/Kong/kubernetes-ingress-controller/v2.9.3/deploy/single/all-in-one-dbless.yaml
+wget https://raw.githubusercontent.com/Kong/kubernetes-ingress-controller/v2.12.8/deploy/single/all-in-one-dbless.yaml
 kubectl apply -f all-in-one-dbless.yaml

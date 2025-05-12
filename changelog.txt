@@ -1,0 +1,23 @@
+b4f0b83 - Matei Dumitrescu, 2025-04-27 : Merge pull request #11 from Arena-acadnet/matei
+893cf73 - avramstefan, 2025-04-26 : added kong plugin for keycloak auth
+2b09acc - Matei Dumitrescu, 2025-04-27 : Merge pull request #10 from Arena-acadnet/matei
+372fb5d - avramstefan, 2025-04-26 : resolved keycloak Deployment and Ingress problems
+75a4554 - Matei Dumitrescu, 2025-04-25 : Merge pull request #9 from Arena-acadnet/matei
+e576294 - avramstefan, 2025-04-24 : changed keycloak endpoint
+5dae470 - Matei Dumitrescu, 2025-04-25 : Merge pull request #8 from Arena-acadnet/matei
+ce0d7c8 - avramstefan, 2025-04-24 : successfully running keycloak on cluster, still being redirected on browser
+12859b8 - avramstefan, 2025-04-24 : successfully running keycloak on cluster, still being redirected on browser
+e17194b - Matei Dumitrescu, 2025-04-24 : Merge pull request #6 from Arena-acadnet/matei
+8809fca - avramstefan, 2025-04-24 : added keycloak deployment and service, OIDC left to setup
+5b6312d - Matei Dumitrescu, 2025-04-24 : Merge pull request #5 from Arena-acadnet/matei
+8c734d3 - avramstefan, 2025-04-24 : added keycloak deployment and service
+f0d17e3 - Avram Cristian Stefan, 2025-04-12 : Merge pull request #4 from Arena-acadnet/prometheus
+974455f - avramstefan, 2025-04-12 : Added pvc to prometheus
+a46c973 - Avram Cristian Stefan, 2025-04-12 : Merge pull request #3 from Arena-acadnet/prometheus
+5c1214d - avramstefan, 2025-04-12 : Grafana done
+de69d05 - avramstefan, 2025-04-12 : Added grafana. Link grafana to prometheus todo
+e208c28 - Avram Cristian Stefan, 2025-04-10 : Merge pull request #2 from Arena-acadnet/prometheus
+cb3f31e - avramstefan, 2025-04-10 : Linked apache2 on server with kong and added gateway to prometheus
+7309dc6 - Avram Cristian Stefan, 2025-04-10 : Merge pull request #1 from Arena-acadnet/prometheus
+c5cb4db - avramstefan, 2025-04-10 : Added node-exported, cadvisor and prometheus
+fba94db - avramstefan, 2025-04-09 : first commit

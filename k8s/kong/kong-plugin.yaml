@@ -1,13 +1,19 @@
 apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:
-  name: keycloak-auth
+  name: keycloak-oidc
   namespace: monitoring
+plugin: openid-connect
 config:
-  client_id: oauth2-proxy
-  client_secret: P3E9xeQA50TdTPpt2VopXdx2lIuYzfvx
-  authorize_url: https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/auth
-  token_url: https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/token
-  redirect_uri: https://arena.acadnet.eu/oauth2/callback
-plugin: oauth2
-
+  issuer: https://arena.acadnet.eu/monitoring/keycloak/realms/master
+  client_id: kong-gateway
+  client_secret: zObsvDw2nwYrV449TjSaE9fx79L79BlC
+  auth_methods: ["authorization_code"]
+  redirect_uri: https://arena.acadnet.eu/monitoring/grafana
+  scopes: ["openid", "email", "profile"]
+  session:
+    cookie:
+      name: kong-gateway-session
+      secure: true
+      lifetime: 3600
+      secret: 18247a89285cecc5067c4a116705f7885e1ea7f7877e0ccfd1a41326e110bdff
