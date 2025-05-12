@@ -6,8 +6,6 @@ metadata:
   annotations:
     konghq.com/strip-path: 'true'
     konghq.com/protocol: 'http'
-    konghq.com/oauth2-proxy: "oauth2-proxy.monitoring.svc.cluster.local"
-    konghq.com/plugins: keycloak-auth
 spec:
   ingressClassName: kong
   rules:
@@ -21,11 +19,3 @@ spec:
               name: prometheus
               port:
                 number: 9090
-        - path: /monitoring/grafana
-          pathType: Prefix
-          backend:
-            service:
-              name: grafana
-              port:
-                number: 3000
-

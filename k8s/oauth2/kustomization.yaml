@@ -1,0 +1,7 @@
+namespace: monitoring
+
+resources:
+  - namespace.yaml
+  - oauth2-secret.yaml
+  - oauth2-deployment.yaml
+  - oauth2-service.yaml
