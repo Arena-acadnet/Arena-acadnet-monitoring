@@ -1,3 +1,5 @@
+# Kong plugin to add for Keycloak OIDC authentication |
+# Use only if Keycloak is used for authentication
 apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:

@@ -30,13 +30,14 @@ data:
     # [auth.anonymous]
     # enabled = true
 
-    [auth.generic_oauth]
-    enabled = true
-    name = Keycloak
-    allow_sign_up = true
-    client_id = kong-gateway
-    client_secret = zObsvDw2nwYrV449TjSaE9fx79L79BlC
-    scopes = openid profile email
-    auth_url = https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/auth
-    token_url = https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/token
-    api_url = https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/userinfo
+    # Enable this if Keycloak is used for authentication
+    # [auth.generic_oauth]
+    # enabled = true
+    # name = Keycloak
+    # allow_sign_up = true
+    # client_id = kong-gateway
+    # client_secret = zObsvDw2nwYrV449TjSaE9fx79L79BlC
+    # scopes = openid profile email
+    # auth_url = https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/auth
+    # token_url = https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/token
+    # api_url = https://arena.acadnet.eu/monitoring/keycloak/realms/master/protocol/openid-connect/userinfo
